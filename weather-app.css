@@ -1,4 +1,155 @@
 body {
-    display: block;
-    align-items: center;
-}
+    margin-top: 100px;
+  }
+  .weatherbox {
+    border: 2px solid #;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    border-radius: 10px;
+    padding: 15px 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .date {
+    color: #2d264b;
+    font-weight: bold;
+    display: fixed;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  .searchButton {
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: floralwhite;
+    font-style: italic;
+  }
+  
+  .citySearch {
+    margin: 10px auto;
+  }
+  
+  .cityName {
+    color: #2d264b;
+    font-size: 2em;
+    padding-top: 40px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .cityHaze {
+    color: #2d264b;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .cityTemp {
+    color: #2d264b;
+    font-size: 5em;
+    text-align: center;
+    line-height: 20px;
+  }
+  .cityHighLow {
+    color: #2d264b;
+    font-size: 13px;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .day {
+    color: #2d264b;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  hr {
+    color: white;
+  }
+  
+  strong {
+    color: #2d264b;
+    font-size: 20px;
+    position: relative;
+    left: 0;
+  }
+  .secondBox {
+    border: 1px solid white;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #2d264b;
+  }
+  
+  .sunday {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .sunday i {
+    color: #8cd880;
+    position: relative;
+    right: -25px;
+  }
+  
+  .monday {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .monday i {
+    color: #3a98e2;
+    position: relative;
+    right: -25px;
+  }
+  
+  .thirtypercent {
+    color: #676783;
+    font-size: 15px;
+    position: relative;
+    top: -2px;
+    right: -25px;
+  }
+  
+  .tuesday {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .tuesday i {
+    color: white;
+    position: relative;
+    right: -25px;
+  }
+  
+  .wednesday {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .wednesday i {
+    color: yellow;
+    position: relative;
+    right: -25px;
+  }
+  
+  .thursday {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .thursday i {
+    color: white;
+    position: relative;
+    right: -25px;
+  }
+  
