@@ -19,20 +19,28 @@
                 </div>
             </div>
 
-            <div class="row citySearch">
-                <div class="col-12">
-                    <input type="text" placeholder="  search" class="searchButton" />
+            <form id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Type a city..." class="type-citysearch" autofocus="on"
+                            autocomplete="off" id="city-input" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="first-searchbutton" id="search-button" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Current" class="second-currentbutton" id="currentPlace" />
+                    </div>
                 </div>
-            </div>
+            </form>
 
             <section>
                 <p class="cityName">Toronto</p>
                 <p class="cityHaze">Haze</p>
-                <p class="cityTemp">
-                    -8
-                    <strong>&#8451;</strong>
-                </p>
-                <p class="cityHighLow">H: -7&deg; L: -12&deg;</p>
+                <span class="temperature" id="temp">19<a href="#" id="celsius-link">&#8451;/</a><a href="#"
+                        id="fahrenheit-link">&#8457;</a></span>
+                <p class="cityHighLow">Humidity:</p>
+                <p class="cityWind">Wind:</p>
                 <p class="day">Friday</p>
             </section>
             <br />
@@ -42,31 +50,34 @@
                 <div class="row sunday">
                     <div class="col-4">Sunday</div>
                     <div class="col-4"><i class="fas fa-wind"></i></div>
-                    <div class="col-4">-4&#8451;&nbsp&nbsp&nbsp&nbsp-8&#8451;</div>
+                    <span class="col-4" id="temp">19 <a href="#" id="celsius-link">&#8451;/</a><a href="#"
+                            id="fahrenheit-link">&#8457;</a></span>
                 </div>
                 <div class="row monday">
                     <div class="col-4">Monday</div>
                     <div class="col-4">
                         <i class="fas fa-snowflake"></i><span class="thirtypercent">&nbsp&nbsp30%</span>
                     </div>
-                    <div class="col-4">-3&#8451;&nbsp&nbsp&nbsp&nbsp-8&#8451;</div>
+                    <span class="col-4" id="temp">19 <a href="#" id="celsius-link">&#8451;/</a><a href="#"
+                            id="fahrenheit-link">&#8457;</a></span>
                 </div>
                 <div class="row tuesday">
                     <div class="col-4">Tuesday</div>
                     <div class="col-4"><i class="fas fa-cloud"></i></div>
-                    <div class="col-4">-2&#8451;&nbsp&nbsp&nbsp&nbsp-6&#8451;</div>
+                    <span class="col-4" id="temp">19 <a href="#" id="celsius-link">&#8451;/</a><a href="#"
+                            id="fahrenheit-link">&#8457;</a></span>
                 </div>
                 <div class="row wednesday">
                     <div class="col-4">Wednesday</div>
                     <div class="col-4"><i class="fas fa-sun"></i></div>
-                    <div class="col-4">-1&#8451;&nbsp&nbsp&nbsp&nbsp-5&#8451;</div>
+                    <span class="col-4" id="temp">19 <a href="#" id="celsius-link">&#8451;/</a><a href="#"
+                            id="fahrenheit-link">&#8457;</a></span>
                 </div>
                 <div class="row thursday">
                     <div class="col-4">Thursday</div>
                     <div class="col-4"><i class="fas fa-cloud"></i></div>
-                    <div class="col-4">
-                        &nbsp&nbsp2&#8451;&nbsp&nbsp&nbsp&nbsp&nbsp0&#8451;
-                    </div>
+                    <span class="col-4" id="temp">19 <a href="#" id="celsius-link">&#8451;/</a><a href="#"
+                            id="fahrenheit-link">&#8457;</a></span>
                 </div>
             </div>
         </div>

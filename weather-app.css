@@ -1,5 +1,6 @@
 body {
     margin-top: 100px;
+    padding-top: 130px;
   }
   .weatherbox {
     border: 2px solid #;
@@ -17,18 +18,28 @@ body {
     text-align: right;
     font-style: italic;
   }
-  
-  .searchButton {
-    border-radius: 10px;
-    background-color: aliceblue;
-    border: floralwhite;
+
+  .type-citysearch{
+    border-radius: 12px;
+    border: cornsilk;
     font-style: italic;
+    font-weight:bold;
   }
+
+ .first-searchbutton {
+  border-radius: 12px;
+  border: cornsilk;
+  font-style: italic;
+  font-weight:bold;
+ }
   
-  .citySearch {
-    margin: 10px auto;
+  .second-currentbutton {
+    border-radius: 12px;
+  border: cornsilk;
+  font-style: italic;
+  font-weight:bold;
   }
-  
+
   .cityName {
     color: #2d264b;
     font-size: 2em;
@@ -43,27 +54,60 @@ body {
     font-size: 15px;
     text-align: center;
     line-height: 20px;
+    font-weight: bold;
+    font-style: italic; 
   }
   
-  .cityTemp {
+  .temperature {
     color: #2d264b;
     font-size: 5em;
     text-align: center;
     line-height: 20px;
+    display: block;
+    padding: 10px 10px 20px 10px;
   }
-  .cityHighLow {
+
+  #celsius-link{
     color: #2d264b;
-    font-size: 13px;
-    padding-top: 10px;
+    font-size:20px;
     text-align: center;
     line-height: 20px;
+    display:inline;
+    text-decoration:none;
+  }
+
+  #fahrenheit-link {
+    color: #2d264b;
+    font-size:20px;
+    text-align: center;
+    line-height: 20px;
+    display:inline;
+    text-decoration:none;
+  }
+
+  .cityHighLow {
+    color: #2d264b;
+    font-size: 15px;
+    text-align: center;
+    line-height: 5px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .cityWind {
+    color: #2d264b;
+    font-size: 15px;
+    text-align: center;
+    line-height: 5px;
+    font-weight: bold;
+    font-style: italic;
   }
   
   .day {
     color: #2d264b;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    line-height: 20px;
+    line-height: 5px;
     font-weight: bold;
     font-style: italic;
   }
