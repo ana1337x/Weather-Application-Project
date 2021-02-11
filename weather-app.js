@@ -22,7 +22,6 @@ document.querySelector(".date").innerHTML = `${month} / ${d} / ${year}`;
 
 // Displays all changes after submit
 function showTemperature(response) {
-    console.log(response.data);
     document.querySelector("#cityName").innerHTML = response.data.name;
     document.querySelector("#temp").innerHTML = Math.round(
         response.data.main.temp

@@ -72,16 +72,9 @@ body {
   
 #bigInfo {
   color: #2d264b;
-  padding: 20px 10px 20px 10px;
+padding-top: 10px;
   text-align: center;
 }
-
-  #bigIcon {
-    font-size: 5em;
-    line-height: 20px;
-    display: inline;
-    
-  }
 
 #iconOne {
   position:relative;
@@ -91,14 +84,14 @@ body {
   .temperature {
     color: #2d264b;
     font-size: 5em;
-    line-height: 20px;
+    line-height: 5px;
     display: inline;
     
   }
 
   #celsius-link {
     font-size:20px;
-    line-height: 20px;
+    line-height: 10px;
     display:inline;
     text-decoration:none;
   }
@@ -106,9 +99,14 @@ body {
   #fahrenheit-link {
     font-size:20px;
     text-align: center;
-    line-height: 20px;
+    line-height: 10px;
     display:inline;
     text-decoration:none;
+  }
+
+  #HWD {
+    position: relative;
+    bottom: 10px;
   }
 
   #humi {
@@ -127,6 +125,7 @@ body {
     line-height: 5px;
     font-weight: bold;
     font-style: italic;
+    padding-top: 5px;
   }
   
   .day {
@@ -136,6 +135,8 @@ body {
     line-height: 5px;
     font-weight: bold;
     font-style: italic;
+    padding-top: 5px;
+    padding-bottom: 15px;
   }
   
   hr {
