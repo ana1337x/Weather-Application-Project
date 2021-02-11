@@ -53,8 +53,9 @@ body {
 
   #cityName {
     color: #2d264b;
-    font-size: 2em;
+    font-size: 50px;
     padding-top: 40px;
+    padding-bottom: 15px;
     font-weight: 500;
     text-align: center;
     line-height: 20px;
@@ -160,79 +161,38 @@ padding-top: 10px;
     left: 0;
   }
   .secondBox {
+    font-weight: bold;
     border: 1px solid white;
     padding: 15px;
     margin-bottom: 10px;
     color: #2d264b;
+    height: 500px;
   }
-  
-  .sunday {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .sunday i {
-    color: #8cd880;
-    position: relative;
-    right: -25px;
-  }
-  
-  .monday {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .monday i {
-    color: #3a98e2;
-    position: relative;
-    right: -25px;
-  }
-  
-  .thirtypercent {
-    color: #676783;
-    font-size: 15px;
-    position: relative;
-    top: -2px;
-    right: -25px;
-  }
-  
-  .tuesday {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .tuesday i {
-    color: white;
-    position: relative;
-    right: -25px;
-  }
-  
-  .wednesday {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .wednesday i {
-    color: yellow;
-    position: relative;
-    right: -25px;
-  }
-  
-  .thursday {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .thursday i {
-    color: white;
-    position: relative;
-    right: -25px;
-  }
+
+#foreCastOne {
+  position: relative;
+  bottom: 45px;
+}
+
+#foreCastTwo {
+  position: relative;
+  bottom: 45px;
+}
+
+#foreCastThree {
+  position: relative;
+  bottom: 45px;
+}
+
+#foreCastFour {
+  position: relative;
+  bottom: 45px;
+}
+
+#foreCastFive {
+  position: relative;
+  bottom: 45px;
+}
   
   .empress {
     text-align: center;

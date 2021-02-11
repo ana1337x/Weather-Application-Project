@@ -35,7 +35,25 @@ function showTemperature(response) {
 }
 
 function showForecast(response) {
-    console.log(response.data)
+    document.querySelector("#foreCastOne").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`);
+    document.querySelector("#maxOne").innerHTML = `${Math.round(response.data.list[0].main.temp_max)}&#176;`;
+    document.querySelector("#minOne").innerHTML = `${Math.round(response.data.list[0].main.temp_min)}&#176;`;
+
+    document.querySelector("#foreCastTwo").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.list[3].weather[0].icon}@2x.png`);
+    document.querySelector("#maxTwo").innerHTML = `${Math.round(response.data.list[3].main.temp_max)}&#176;`;
+    document.querySelector("#minTwo").innerHTML = `${Math.round(response.data.list[3].main.temp_min)}&#176;`;
+
+    document.querySelector("#foreCastThree").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.list[6].weather[0].icon}@2x.png`);
+    document.querySelector("#maxThree").innerHTML = `${Math.round(response.data.list[6].main.temp_max)} &#176;`;
+    document.querySelector("#minThree").innerHTML = `${Math.round(response.data.list[6].main.temp_min)} &#176;`;
+
+    document.querySelector("#foreCastFour").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.list[9].weather[0].icon}@2x.png`);
+    document.querySelector("#maxFour").innerHTML = `${Math.round(response.data.list[9].main.temp_max)} &#176;`;
+    document.querySelector("#minFour").innerHTML = `${Math.round(response.data.list[9].main.temp_min)} &#176;`;
+
+    document.querySelector("#foreCastFive").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.list[12].weather[0].icon}@2x.png`);
+    document.querySelector("#maxFive").innerHTML = `${Math.round(response.data.list[12].main.temp_max)} &#176;`;
+    document.querySelector("#minFive").innerHTML = `${Math.round(response.data.list[12].main.temp_min)} &#176;`;
 }
 
 
