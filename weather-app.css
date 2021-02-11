@@ -96,6 +96,16 @@ padding-top: 10px;
     text-decoration:none;
   }
 
+  .active {
+    color: black;
+    cursor: default;
+  }
+
+  .active:hover {
+    text-decoration: none;
+    color: black;
+  }
+
   #fahrenheit-link {
     font-size:20px;
     text-align: center;

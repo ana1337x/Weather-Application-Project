@@ -23,9 +23,7 @@ document.querySelector(".date").innerHTML = `${month} / ${d} / ${year}`;
 // Displays all changes after submit
 function showTemperature(response) {
     document.querySelector("#cityName").innerHTML = response.data.name;
-    document.querySelector("#temp").innerHTML = Math.round(
-        response.data.main.temp
-    );
+    document.querySelector("#temp").innerHTML = Math.round(response.data.main.temp);
     document.querySelector(
         "#humi"
     ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
@@ -35,6 +33,7 @@ function showTemperature(response) {
     document.querySelector("#condition").innerHTML = response.data.weather[0].description;
     document.querySelector("#iconOne").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
+
 function valueToDisplay(result) {
     let apiKey = "ef30aa9056a9ed9d86308d59509e7ff4";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${result}&appid=${apiKey}&units=metric`;
@@ -50,7 +49,6 @@ function pointy(event) {
 let citySearchButton = document.querySelector("#search-form");
 citySearchButton.addEventListener("submit", pointy);
 
-valueToDisplay("Toronto");
 
 // submit current location
 function myLocation(position) {
@@ -67,3 +65,35 @@ function locButton(event) {
 
 let loc = document.querySelector("#currentPlace");
 loc.addEventListener("click", locButton);
+
+
+// Convert Celsius to Fahrenheit!!
+function fahren(event) {
+    event.preventDefault();
+    let selectFah = document.querySelector("#temp")
+    cels.classList.remove("active");
+    fah.classList.add("active");
+    let convertResult = (selectFah.innerHTML * 9) / 5 + 32;
+    selectFah.innerHTML = Math.round(convertResult);
+}
+
+let fah = document.querySelector("#fahrenheit-link")
+fah.addEventListener("click", fahren);
+
+
+// Convert Fahrenheit to Celsius!!
+function cells(event) {
+    event.preventDefault();
+    let selectCels = document.querySelector("#temp")
+    fah.classList.remove("active")
+    cels.classList.add("active")
+    let convertBack = (selectCels.innerHTML - 32) * 5 / 9;
+    selectCels.innerHTML = Math.round(convertBack);
+}
+
+let cels = document.querySelector("#celsius-link")
+cels.addEventListener("click", cells);
+
+valueToDisplay("Toronto");
+
+// Math.round(((temperature - 32) * 5) / 9);
