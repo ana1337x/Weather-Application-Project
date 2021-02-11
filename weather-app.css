@@ -67,6 +67,7 @@ body {
     line-height: 10px;
     font-weight: bold;
     font-style: italic; 
+    text-transform: capitalize;
   }
   
 #bigInfo {
@@ -81,6 +82,11 @@ body {
     display: inline;
     
   }
+
+#iconOne {
+  position:relative;
+  bottom: 30px;
+}
 
   .temperature {
     color: #2d264b;

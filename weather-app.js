@@ -22,6 +22,7 @@ document.querySelector(".date").innerHTML = `${month} / ${d} / ${year}`;
 
 // Displays all changes after submit
 function showTemperature(response) {
+    console.log(response.data);
     document.querySelector("#cityName").innerHTML = response.data.name;
     document.querySelector("#temp").innerHTML = Math.round(
         response.data.main.temp
@@ -32,7 +33,8 @@ function showTemperature(response) {
     document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
         response.data.wind.speed
     )} km/hr`;
-    document.querySelector("#condition").innerHTML = response.data.weather[0].description.toUpperCase();
+    document.querySelector("#condition").innerHTML = response.data.weather[0].description;
+    document.querySelector("#iconOne").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 function valueToDisplay(result) {
     let apiKey = "ef30aa9056a9ed9d86308d59509e7ff4";
@@ -50,6 +52,7 @@ let citySearchButton = document.querySelector("#search-form");
 citySearchButton.addEventListener("submit", pointy);
 
 valueToDisplay("Toronto");
+
 // submit current location
 function myLocation(position) {
     let lat = position.coords.latitude;
