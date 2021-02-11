@@ -34,10 +34,18 @@ function showTemperature(response) {
     document.querySelector("#iconOne").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
+function showForecast(response) {
+    console.log(response.data)
+}
+
+
 function valueToDisplay(result) {
     let apiKey = "ef30aa9056a9ed9d86308d59509e7ff4";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${result}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showTemperature);
+
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${result}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showForecast);
 }
 
 function pointy(event) {
