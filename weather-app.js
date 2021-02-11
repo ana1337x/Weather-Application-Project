@@ -9,26 +9,30 @@ let days = [
     "Friday",
     "Saturday"
 ];
+let d = now.getDate();
+let year = now.getFullYear();
+let month = now.getMonth() + 1;
 let day = days[now.getDay()];
 let hrTime = now.getHours();
 let minutes = now.getMinutes();
-let today = document.querySelector("#daytime");
-today.innerHTML = `${day} ${hrTime}:${minutes}`;
+document.querySelector(".day").innerHTML = `${day}`;
+document.querySelector(".time").innerHTML = `${hrTime}:${minutes}`;
+document.querySelector(".date").innerHTML = `${month} / ${d} / ${year}`;
+
 
 // Displays all changes after submit
 function showTemperature(response) {
-    document.querySelector("#city").innerHTML = response.data.name;
+    document.querySelector("#cityName").innerHTML = response.data.name;
     document.querySelector("#temp").innerHTML = Math.round(
         response.data.main.temp
     );
     document.querySelector(
         "#humi"
-    ).innerHTML = `Humidity:${response.data.main.humidity}%`;
-    document.querySelector("#wind").innerHTML = `Wind:${Math.round(
+    ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
+    document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
         response.data.wind.speed
     )} km/hr`;
-    document.querySelector("#condition").innerHTML =
-        response.data.weather[0].description;
+    document.querySelector("#condition").innerHTML = response.data.weather[0].description.toUpperCase();
 }
 function valueToDisplay(result) {
     let apiKey = "ef30aa9056a9ed9d86308d59509e7ff4";
@@ -42,9 +46,11 @@ function pointy(event) {
     valueToDisplay(result);
 }
 
-let citySearchButton = document.querySelector("#searchy");
+let citySearchButton = document.querySelector("#search-form");
 citySearchButton.addEventListener("submit", pointy);
 
+valueToDisplay("Toronto");
+// submit current location
 function myLocation(position) {
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
