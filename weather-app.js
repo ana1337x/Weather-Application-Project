@@ -32,6 +32,7 @@ function showTemperature(response) {
     )} km/hr`;
     document.querySelector("#condition").innerHTML = response.data.weather[0].description;
     document.querySelector("#iconOne").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    console.log(response.data);
 }
 
 function showForecast(response) {
