@@ -84,6 +84,8 @@ function myLocation(position) {
     let apiKey = "ef30aa9056a9ed9d86308d59509e7ff4";
     let locApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
     axios.get(locApi).then(showTemperature);
+    locApi = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+    axios.get(locApi).then(showForecast);
 }
 function locButton(event) {
     event.preventDefault();
@@ -92,6 +94,7 @@ function locButton(event) {
 
 let loc = document.querySelector("#currentPlace");
 loc.addEventListener("click", locButton);
+
 
 
 // Convert Celsius to Fahrenheit!!
